@@ -1,0 +1,195 @@
+%%
+%% JMU Honors College Format Style
+%%  
+%% This file was crafted originally
+%% by Daniel O. Awduche, Christopher A. St. Jean and Muhammad Abdulla
+%% at George Mason University.
+%% The file was modified for the JMU honors college format
+%% by Kevin Molloy.
+%%
+%% Notes on usage can be found in the accompanying USAGE_NOTES.txt file.
+%%
+%%**********************************************************************
+%% Legal Notice:
+%% This code is offered as-is without any warranty either
+%% expressed or implied; without even the implied warranty of
+%% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE!
+%% User assumes all risk.
+%% In no event shall any contributor to this code be liable for any damages
+%% or losses, including, but not limited to, incidental, consequential, or
+%% any other damages, resulting from the use or misuse of any information
+%% contained here.
+%%**********************************************************************
+%%
+
+\documentclass[12 pt]{report}
+
+%%  The file ``thesis.sty''  is the JMU honors college latex style file and
+%%   should be placed in the same directory as your LaTeX files
+\usepackage{thesis}
+
+%%
+%% other packages that need to be loaded
+%%
+\usepackage{graphicx}                    %   for imported graphics
+\usepackage{amsmath}                     %%
+\usepackage{amsfonts}                    %%  for AMS mathematics
+\usepackage{amssymb}                     %%
+\usepackage{amsthm}                      %%
+\usepackage[normalem]{ulem}              %   a nice standard underline package
+\usepackage[noadjust,verbose,sort]{cite} %   arranges reference citations neatly
+\usepackage{setspace}                    %   for line spacing commands
+\usepackage{times}
+%\setromanfont{Times New Roman}
+%% The file ``mydissertationabbrev.sty'' is an (optional) personalized file that
+%% may contain any and all LaTeX command (re)definitions that will be used
+%% throughout the document
+%\usepackage{mydissertationabbrev}
+
+
+\graphicspath{{./figs/}}  %% Where the figures live
+
+\beforedoc
+
+\begin{document}
+
+%% In this section, all of the user-specific fields to be used in the
+%% title pages are set
+\title{First line of the title\\
+            second line of the title}
+\onelinetitle{The complete title is to be repeated here without any line
+        breaks for the second page and for the abstract page}
+\author{}
+\degree{}
+\doctype{Thesis}
+\dept{}
+\discipline{}
+
+
+\degreeyear{}
+
+% Note: semester name should be written in its full-form. For example, Fall Semester, not just Fall.
+\degreesemester{Semester}
+
+\advisor{}
+
+\firstmember{}
+
+\secondmember{}
+
+\thirdmember{}
+
+\depthead{}
+
+\deanITE{Dr. Robert Kolvoord}
+
+%%
+%% Introductory pages
+%%
+
+% Note: The signature sheet is set according to the requirements of the Volgenau School of
+% Information Technology and Engineering. If your college/school requirement is different,
+% please make appropriate changes in the "signaturepage" section of gmudissertation.sty file.
+
+\signaturepage
+
+%\titlepage
+
+% copyright technically optional but should be included in to avoid potential pagination problems
+\copyrightpage
+
+%%
+%% Dedication page
+%%
+
+\dedicationpage
+
+\noindent I dedicate this dissertation to ...
+I dedicate this dissertation to ...
+I dedicate this dissertation to ...
+I dedicate this dissertation to ...
+I dedicate this dissertation to ...
+I dedicate this dissertation to ...
+I dedicate this dissertation to ...
+
+
+
+\noindent I would like to thank the following people who made this possible ...
+I would like to thank the following people who made this possible ...
+
+%%
+%% Table of contents, list of tables, and lists of figures
+%%
+
+\tableofcontents
+
+\listoftables
+
+\listoffigures
+
+%%
+%% Acknowledgements
+%%
+
+\acknowledgementspage
+
+%%
+%% Abstract
+%%
+\abstractpage
+
+The first page of the abstract
+
+%% Be sure to leave a line of whitespace immediately before this line!!!!!
+%% (If this comment segment runs together with the preceeding text, you might
+%%  see the second page of the abstract numbered "0".)
+%%
+%% If the abstract is more than one page, then place this line PRECISELY
+%% at the page break; otherwise, comment it out.  (See note about this line
+%% in the usage notes.)
+%%
+%\abstractmultiplepage
+%
+%The second page of the abstract
+%
+%
+%
+%%
+%%  the main body of the dissertation
+%%
+\startofchapters
+
+%% include the chapters one by one (or paste the chapter text in directly if desired)
+\include{chapterOne}
+%\include{chapterTwo}
+%\include{chapterThree}
+%\include{chapterFour}
+
+%% Note: appendix is now put before bibliography.
+%% include the following directives if there are any appendices
+\appendix
+\appendixeqnumbering
+\include{Appendix}
+
+%%
+%%  bibliography
+%%
+
+%% list all of the BibTeX files here for the WinEdt project (if applicable)
+%GATHER{bibfile.bib}
+
+%% any bibliography style can be used, but IEEEtran.bst is ideally suited to
+%% electrical engineering references
+
+\bibliographystyle{IEEEtran}
+\bibliography{IEEEfull,bibfile}
+
+%%
+%% curriculum vitae
+%%
+%\cvpage
+
+%\noindent Include your \emph{curriculum vitae} here detailing your background,
+%education, and professional experience.
+
+\end{document}
