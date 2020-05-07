@@ -26,6 +26,8 @@
 
 %%  The file ``thesis.sty''  is the JMU honors college latex style file and
 %%   should be placed in the same directory as your LaTeX files
+\usepackage{ctable}
+
 \usepackage{thesis}
 
 %%
@@ -40,12 +42,8 @@
 \usepackage[noadjust,verbose,sort]{cite} %   arranges reference citations neatly
 \usepackage{setspace}                    %   for line spacing commands
 \usepackage{times}
-%\setromanfont{Times New Roman}
-%% The file ``mydissertationabbrev.sty'' is an (optional) personalized file that
-%% may contain any and all LaTeX command (re)definitions that will be used
-%% throughout the document
-%\usepackage{mydissertationabbrev}
 
+%\setromanfont{Times New Roman}
 
 \graphicspath{{./figs/}}  %% Where the figures live
 
@@ -59,29 +57,43 @@
             second line of the title}
 \onelinetitle{The complete title is to be repeated here without any line
         breaks for the second page and for the abstract page}
-\author{}
-\degree{}
+\author{Student}
+\degree{Bachelor of Science}
 \doctype{Thesis}
-\dept{}
-\discipline{}
-
+\dept{Computer Science}
+\discipline{Computer Science}
+\submitdate{June 2020}
 
 \degreeyear{}
 
 % Note: semester name should be written in its full-form. For example, Fall Semester, not just Fall.
 \degreesemester{Semester}
 
-\advisor{}
+\advisor{Dee A.B Weikle, Ph.D}
+\advisorrank{Associate Professor}
+\advisordept{Computer Science}
 
-\firstmember{}
+\firstmember{Michael S. Kirkpatrick, Ph.D}
+\firstmemberRole{Reader}
+\firstrank{Associate Professor}
+\firstdept{Computer Science}
 
-\secondmember{}
 
-\thirdmember{}
+\secondmember{Christopher S. Mayfield, Ph.D}
+\secondmemberRole{Reader}
+\secondrank{Associate Professor}
+\seconddept{Computer Science}
 
-\depthead{}
 
-\deanITE{Dr. Robert Kolvoord}
+\thirdmember{Angela W. Webb, Ph.D}
+\thirdmemberRole{Reader}
+\thirdrank{Assistant Professor}
+\thirddept{MSME}
+
+\presentLocation{ISAT/CS Room 246}
+\presentDate{April 20, 2020}
+
+\deanHonorsCollege{Bradley R. Newcomer, Ph.D.}
 
 %%
 %% Introductory pages
@@ -191,5 +203,6 @@ The first page of the abstract
 
 %\noindent Include your \emph{curriculum vitae} here detailing your background,
 %education, and professional experience.
+
 
 \end{document}
